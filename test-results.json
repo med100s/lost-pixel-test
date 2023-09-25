@@ -1,0 +1,147 @@
+{
+  "config": {
+    "configFile": "/home/med100s/programming/lost-pixel-test/playwright.config.ts",
+    "rootDir": "/home/med100s/programming/lost-pixel-test/tests",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-results.json"
+        }
+      ],
+      [
+        "html",
+        {
+          "outputFolder": "my-report"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 15000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "/home/med100s/programming/lost-pixel-test/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/home/med100s/programming/lost-pixel-test/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "version": "1.38.1",
+    "workers": 4,
+    "webServer": {
+      "command": "npm run dev",
+      "port": 5173
+    }
+  },
+  "suites": [
+    {
+      "title": "test.spec.js",
+      "file": "test.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "visual test main page",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "failed",
+                  "duration": 866,
+                  "error": {
+                    "message": "\u001b[31mScreenshot comparison failed:\u001b[39m\n\n  796 pixels (ratio 0.01 of all image pixels) are different.\n\nCall log:\n  \u001b[2m- expect.toHaveScreenshot(visual_test_main_page.png) with timeout 5000ms\u001b[22m\n\u001b[2m  -   verifying given screenshot expectation\u001b[22m\n\u001b[2m  - taking page screenshot\u001b[22m\n\u001b[2m  -   disabled all CSS animations\u001b[22m\n\u001b[2m  - 796 pixels (ratio 0.01 of all image pixels) are different.\u001b[22m\n\u001b[2m  - waiting 100ms before taking screenshot\u001b[22m\n\u001b[2m  - taking page screenshot\u001b[22m\n\u001b[2m  -   disabled all CSS animations\u001b[22m\n\u001b[2m  - captured a stable screenshot\u001b[22m\n\u001b[2m  - 796 pixels (ratio 0.01 of all image pixels) are different.\u001b[22m\n\nExpected: \u001b[33m/home/med100s/programming/lost-pixel-test/tests/test.spec.js-snapshots/visual-test-main-page-chromium-linux.png\u001b[39m\nReceived: \u001b[33m/home/med100s/programming/lost-pixel-test/test-results/test-visual-test-main-page-chromium/visual-test-main-page-actual.png\u001b[39m\n    Diff: \u001b[33m/home/med100s/programming/lost-pixel-test/test-results/test-visual-test-main-page-chromium/visual-test-main-page-diff.png\u001b[39m",
+                    "stack": "Error: \u001b[31mScreenshot comparison failed:\u001b[39m\n\n  796 pixels (ratio 0.01 of all image pixels) are different.\n\nCall log:\n  \u001b[2m- expect.toHaveScreenshot(visual_test_main_page.png) with timeout 5000ms\u001b[22m\n\u001b[2m  -   verifying given screenshot expectation\u001b[22m\n\u001b[2m  - taking page screenshot\u001b[22m\n\u001b[2m  -   disabled all CSS animations\u001b[22m\n\u001b[2m  - 796 pixels (ratio 0.01 of all image pixels) are different.\u001b[22m\n\u001b[2m  - waiting 100ms before taking screenshot\u001b[22m\n\u001b[2m  - taking page screenshot\u001b[22m\n\u001b[2m  -   disabled all CSS animations\u001b[22m\n\u001b[2m  - captured a stable screenshot\u001b[22m\n\u001b[2m  - 796 pixels (ratio 0.01 of all image pixels) are different.\u001b[22m\n\nExpected: \u001b[33m/home/med100s/programming/lost-pixel-test/tests/test.spec.js-snapshots/visual-test-main-page-chromium-linux.png\u001b[39m\nReceived: \u001b[33m/home/med100s/programming/lost-pixel-test/test-results/test-visual-test-main-page-chromium/visual-test-main-page-actual.png\u001b[39m\n    Diff: \u001b[33m/home/med100s/programming/lost-pixel-test/test-results/test-visual-test-main-page-chromium/visual-test-main-page-diff.png\u001b[39m\n    at /home/med100s/programming/lost-pixel-test/tests/test.spec.js:12:24",
+                    "location": {
+                      "file": "/home/med100s/programming/lost-pixel-test/tests/test.spec.js",
+                      "column": 24,
+                      "line": 12
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 10 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 11 |\u001b[39m     \u001b[90m//  🚀🚀🚀 We are adding visual tests here 🚀🚀🚀\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 12 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page)\u001b[33m.\u001b[39mtoHaveScreenshot(\u001b[32m\"visual_test_main_page.png\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 13 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 14 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 15 |\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/home/med100s/programming/lost-pixel-test/tests/test.spec.js",
+                        "column": 24,
+                        "line": 12
+                      },
+                      "message": "Error: \u001b[31mScreenshot comparison failed:\u001b[39m\n\n  796 pixels (ratio 0.01 of all image pixels) are different.\n\nCall log:\n  \u001b[2m- expect.toHaveScreenshot(visual_test_main_page.png) with timeout 5000ms\u001b[22m\n\u001b[2m  -   verifying given screenshot expectation\u001b[22m\n\u001b[2m  - taking page screenshot\u001b[22m\n\u001b[2m  -   disabled all CSS animations\u001b[22m\n\u001b[2m  - 796 pixels (ratio 0.01 of all image pixels) are different.\u001b[22m\n\u001b[2m  - waiting 100ms before taking screenshot\u001b[22m\n\u001b[2m  - taking page screenshot\u001b[22m\n\u001b[2m  -   disabled all CSS animations\u001b[22m\n\u001b[2m  - captured a stable screenshot\u001b[22m\n\u001b[2m  - 796 pixels (ratio 0.01 of all image pixels) are different.\u001b[22m\n\nExpected: \u001b[33m/home/med100s/programming/lost-pixel-test/tests/test.spec.js-snapshots/visual-test-main-page-chromium-linux.png\u001b[39m\nReceived: \u001b[33m/home/med100s/programming/lost-pixel-test/test-results/test-visual-test-main-page-chromium/visual-test-main-page-actual.png\u001b[39m\n    Diff: \u001b[33m/home/med100s/programming/lost-pixel-test/test-results/test-visual-test-main-page-chromium/visual-test-main-page-diff.png\u001b[39m\n\n\u001b[0m \u001b[90m 10 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 11 |\u001b[39m     \u001b[90m//  🚀🚀🚀 We are adding visual tests here 🚀🚀🚀\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 12 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page)\u001b[33m.\u001b[39mtoHaveScreenshot(\u001b[32m\"visual_test_main_page.png\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 13 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 14 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 15 |\u001b[39m\u001b[0m\n\n\u001b[2m    at /home/med100s/programming/lost-pixel-test/tests/test.spec.js:12:24\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2023-09-25T13:12:38.237Z",
+                  "attachments": [
+                    {
+                      "name": "visual_test_main_page-expected.png",
+                      "contentType": "image/png",
+                      "path": "/home/med100s/programming/lost-pixel-test/tests/test.spec.js-snapshots/visual-test-main-page-chromium-linux.png"
+                    },
+                    {
+                      "name": "visual_test_main_page-actual.png",
+                      "contentType": "image/png",
+                      "path": "/home/med100s/programming/lost-pixel-test/test-results/test-visual-test-main-page-chromium/visual-test-main-page-actual.png"
+                    },
+                    {
+                      "name": "visual_test_main_page-diff.png",
+                      "contentType": "image/png",
+                      "path": "/home/med100s/programming/lost-pixel-test/test-results/test-visual-test-main-page-chromium/visual-test-main-page-diff.png"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/home/med100s/programming/lost-pixel-test/tests/test.spec.js",
+                    "column": 24,
+                    "line": 12
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "31be70adcd52654ff551-fbb3b1af90b3d12642aa",
+          "file": "test.spec.js",
+          "line": 5,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": []
+}
