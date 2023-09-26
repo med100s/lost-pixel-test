@@ -12,12 +12,11 @@ import { devices } from "@playwright/test";
  */
 const config: PlaywrightTestConfig = {
   testDir: "./tests",
-  outputDir: "test-results/",
+  outputDir: "./tests/test-results/",
 
   reporter: [
-    // ["list"],
-    // ["json", { outputFile: "test-results.json" }],
-    ["html", { open: "never", outputFolder: "playwright-report" }],
+    ["list"], 
+    ["html", { open: "never", outputFolder: "./playwright-report" }],
   ],
 
   /* Configure projects for major browsers */

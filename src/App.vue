@@ -6,6 +6,8 @@
 
 <template>
   <h3>Rappid Vue3</h3>
+  <h3>something another
+  </h3>
   <!-- <Diagram msg="Hello Vue 3 Vite" /> -->
 </template>
 
