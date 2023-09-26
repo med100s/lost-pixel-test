@@ -105,3 +105,6 @@ dist
 
 # Storybook build
 storybook-static/
+
+# playwright report
+/playwright-report
